@@ -6,7 +6,7 @@ function ExploreCard({ title, text, imageURL, data, onSelectCity }) {
   return (
     <div
       className="flex flex-row items-center justify-center max-w-sm
-        mt-4 p-4 rounded-3xl shadow-lg "
+        mt-4 p-4 rounded-3xl shadow-lg cursor-pointer"
       onClick={() => onSelectCity(data)}
     >
       {/* photo */}
@@ -19,13 +19,13 @@ function ExploreCard({ title, text, imageURL, data, onSelectCity }) {
       {/* text */}
       <div className="flex basis-3/4 flex-col items-start pl-4 ">
         {/* title */}
-        <h2 className="text-xl font-semibold text-blue-700 tracking-wide">
+        <h2 className="text-2xl font-bold text-blue-700 tracking-wide">
           {title}
         </h2>
         {/* description */}
         <p
           className="text-gray-700 text-sm tracking-wide 
-             line-clamp-3 hover:line-clamp-none "
+             line-clamp-3  "
         >
           {text}
         </p>

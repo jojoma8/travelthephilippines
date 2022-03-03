@@ -9,7 +9,7 @@ import ExploreCard from "./ExploreCard";
 import Map, { Marker, Popup, MapRef } from "react-map-gl";
 import Image from "next/image";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { content } from "./Content";
+import { content } from "../Content";
 import marker from "/assets/marker.svg";
 
 function MainPageExplore() {
@@ -79,9 +79,10 @@ function MainPageExplore() {
           <div></div>
           {/* attractions list */}
           <div>
-            {content.attractions.map((data) => {
+            {content.attractions.map((data, index) => {
               return (
                 <ExploreCard
+                  key={index}
                   title={data.title}
                   text={data.exploreText}
                   imageURL={data.imageURL}

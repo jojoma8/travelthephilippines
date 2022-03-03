@@ -1,5 +1,6 @@
 import React from "react";
-import { content } from "./Content";
+import { content } from "../Content";
+import AttractionsCard from "./AttractionsCard";
 import ExploreCard from "./ExploreCard";
 
 function MainPageAttractions() {
@@ -15,10 +16,10 @@ function MainPageAttractions() {
           {/* selector */}
           <div></div>
           {/* attractions list */}
-          <div>
+          <div className="grid-cols-4 grid gap-5">
             {content.attractions.map((data) => {
               return (
-                <ExploreCard
+                <AttractionsCard
                   title={data.title}
                   text={data.exploreText}
                   imageURL={data.imageURL}
