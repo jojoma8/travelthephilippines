@@ -34,32 +34,45 @@ function MainPageTop() {
 
   return (
     <div>
-      <div className="relative ">
-        <Image
-          className=" "
-          src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-          width={1374}
-          height={1031}
-          layout="responsive"
-          objectFit="cover"
-          alt="El Nido"
-          // quality="100"
-          priority
-        />
-        <div className="">
-          <div className="absolute -bottom-68 md:bottom-28 text-4xl left-20 text-gray-800 font-semibold z-50 ">
-            Travel the
-          </div>
-          <div
-            className="bg-white absolute z-40 -bottom-40 md:bottom-0  text-8xl text-blue-700 
-        pt-16 pr-20 pl-10 pb-5 font-extrabold "
-          >
-            Philippines
+      <div className="">
+        <div className="md:relative">
+          <Image
+            className="  "
+            src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            width={1374}
+            height={1031}
+            // width={1374}
+            // height={1031}
+            layout="responsive"
+            // objectFit="cover"
+            // layout="fill"
+            alt="El Nido"
+            // quality="100"
+            priority
+          />
+          <div className="">
+            <div
+              className="text-xl font-semibold z-50 text-gray-800
+              pl-12  
+              md:absolute md:bottom-28 md:text-4xl md:left-20   "
+            >
+              Travel the
+            </div>
+            <div
+              className="bg-white pl-5 text-6xl text-blue-700 font-extrabold
+                md:absolute z-40  md:bottom-0  md:text-8xl  
+                md:pt-16 md:pr-20 md:pl-10 md:pb-5  "
+            >
+              Philippines
+            </div>
           </div>
         </div>
       </div>
       <div className="">
-        <div className="flex justify-between mt-40 ml-10 md:m-10 ">
+        <div
+          className="flex justify-between m-5
+          md:mt-40 md:ml-10 md:m-10 "
+        >
           <div className="md:max-w-lg">
             <p className="text-2xl sm:text-4xl font-light tracking-wider ">
               The Philippines is defined by its emerald rice fields, teeming
@@ -117,7 +130,7 @@ function MainPageTop() {
               className="text-blue-700 font-semibold mt-5"
               onClick={() => handleToggle()}
             >
-              Read More {readMoreToggle ? "hello" : "there"}
+              Read More
             </button>
           </div>
           <div className="hidden md:inline-flex">TOC</div>

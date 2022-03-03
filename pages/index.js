@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="md:max-w-5xl mx-auto ">
+      <main className="md:max-w-5xl md:mx-auto ">
         <MainPageTop />
         <MainPageExplore />
         <MainPageAttractions />
