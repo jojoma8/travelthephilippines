@@ -17,9 +17,10 @@ function MainPageAttractions() {
           <div></div>
           {/* attractions list */}
           <div className="grid-cols-4 grid gap-5">
-            {content.attractions.map((data) => {
+            {content.attractions.map((data, index) => {
               return (
                 <AttractionsCard
+                  key={index}
                   title={data.title}
                   text={data.exploreText}
                   imageURL={data.imageURL}
