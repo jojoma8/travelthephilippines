@@ -1,6 +1,7 @@
 import Head from "next/head";
 import MainPageTop from "../components/mainPage/MainPageTop";
 import MainPageExplore from "../components/mainPage/MainPageExplore";
+import MainPageAttractions from "../components/mainPage/MainPageAttractions";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="max-w-5xl mx-auto ">
         <MainPageTop />
         <MainPageExplore />
+        <MainPageAttractions />
       </main>
     </div>
   );

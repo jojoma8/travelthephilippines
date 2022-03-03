@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-function ExploreCard({ title, text, imageURL }) {
+function ExploreCard({ title, text, imageURL, data, onSelectCity }) {
   return (
     <div
       className="flex flex-row items-center justify-center max-w-sm
         mt-4 p-4 rounded-3xl shadow-lg "
+      onClick={() => onSelectCity(data)}
     >
       {/* photo */}
       <div
