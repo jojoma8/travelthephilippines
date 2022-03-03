@@ -64,10 +64,10 @@ function MainPageExplore() {
   }, []);
 
   return (
-    <div className="m-10">
+    <div className="m-10 flex flex-col ">
       {/* top */}
       <div>
-        <div className="text-5xl font-semibold pb-5">
+        <div className="text-4xl md:text-5xl font-semibold pb-5 ">
           Explore the Philippines
         </div>
       </div>
@@ -94,7 +94,7 @@ function MainPageExplore() {
           </div>
         </div>
         {/* map */}
-        <div className="p-5 rounded-3xl ">
+        <div className="p-5 rounded-3xl hidden md:inline-flex">
           <Map
             ref={mapRef}
             initialViewState={{
