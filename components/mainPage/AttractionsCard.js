@@ -23,7 +23,7 @@ function AttractionsCard({ title, text, imageURL, data }) {
       <div
         className="flex basis-3/4 flex-col items-start 
         pt-3 pl-1
-        md:pl-4 "
+        md:px-1 "
       >
         {/* description */}
         <p className="text-gray-700 text-sm tracking-wide line-clamp-15">
