@@ -20,12 +20,13 @@ function AttractionsCard({ title, text, imageURL, data }) {
         <Image src={imageURL} height={100} width={100} alt={text} />
       </div>
       {/* text */}
-      <div className="flex basis-3/4 flex-col items-start pl-4 ">
+      <div
+        className="flex basis-3/4 flex-col items-start 
+        pt-3 pl-1
+        md:pl-4 "
+      >
         {/* description */}
-        <p
-          className="text-gray-700 text-sm tracking-wide 
-             line-clamp-10  "
-        >
+        <p className="text-gray-700 text-sm tracking-wide line-clamp-15">
           {text}
         </p>
       </div>

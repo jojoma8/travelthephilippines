@@ -64,10 +64,13 @@ function MainPageExplore() {
   }, []);
 
   return (
-    <div className="m-10 flex flex-col ">
+    <div className="m-5 md:m-10 flex flex-col ">
       {/* top */}
       <div>
-        <div className="text-4xl md:text-5xl font-semibold pb-5 ">
+        <div
+          className="text-3xl
+          md:text-5xl font-semibold md:pb-5 "
+        >
           Explore the Philippines
         </div>
       </div>

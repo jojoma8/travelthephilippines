@@ -5,9 +5,14 @@ import ExploreCard from "./ExploreCard";
 
 function MainPageAttractions() {
   return (
-    <div className="m-10">
+    <div className="m-5 md:m-10">
       <div>
-        <div className="text-5xl font-semibold pb-5">Top Attractions</div>
+        <div
+          className="text-3xl  font-semibold 
+            md:text-5xl md:pb-5"
+        >
+          Top Attractions
+        </div>
       </div>
       {/* body */}
       <div className="flex flex-row items-start ">
@@ -16,7 +21,7 @@ function MainPageAttractions() {
           {/* selector */}
           <div></div>
           {/* attractions list */}
-          <div className="grid-cols-4 grid gap-5">
+          <div className="md:grid-cols-4 md:grid md:gap-5">
             {content.attractions.map((data, index) => {
               return (
                 <AttractionsCard
