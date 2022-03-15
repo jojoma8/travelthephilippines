@@ -46,7 +46,7 @@ function MainPageTop() {
             layout="responsive"
             // objectFit="cover"
             // layout="fill"
-            alt="El Nido"
+            alt="El Nido Photo Credits Cris Tagupa Unsplash"
             // quality="100"
             priority
           />
@@ -66,19 +66,31 @@ function MainPageTop() {
               Philippines
             </div>
           </div>
+          <div
+            className="md:absolute right-0 -translate-y-0
+              md:translate-y-0
+              flex flex-col items-end justify-end bg-transparent"
+          >
+            <div className="text-sm md:text-base">Photo by Cris Tagupa</div>
+            <div className="text-gray-500 font-extralight text-xs">
+              https://unsplash.com/@cjtagupa
+            </div>
+          </div>
         </div>
       </div>
       <div className="">
         <div
           className="flex justify-between m-5
-          md:mt-40 md:ml-10 md:m-10 "
+          md:mt-10 md:ml-10 md:m-10 "
         >
           <div className="md:max-w-lg">
             <p className="text-2xl sm:text-4xl font-light tracking-wider ">
-              The Philippines is defined by its emerald rice fields, teeming
-              megacities, graffiti-splashed jeepneys, smouldering volcanoes,
-              bug-eyed tarsiers, fuzzy water buffalo and smiling, happy-go-lucky
-              people.
+              Explore the country's 7,107 islands while bathing in crystal clear
+              turquoise blue waters. Sink your feet in powdery white sand
+              beaches surrounded by incredible limestone formations. Dive with
+              Whale Sharks or snorkel around reefs teeming with aquatic life and
+              ship wrecks. There's always something to discover in the
+              Philippines.
             </p>
             <AnimatePresence>
               {readMoreToggle && (
